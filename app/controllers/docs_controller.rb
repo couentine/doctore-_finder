@@ -67,7 +67,7 @@ class DocsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def doc_params
-      params.require(:doc).permit(:name, :speciality, :zip)
+      params.require(:doc).permit(:name, :specialty, :zip, :review)
     end
 
 # when we lunch the front page it will sort by speciality automaticly
