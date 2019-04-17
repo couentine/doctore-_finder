@@ -6,6 +6,8 @@ class DocsController < ApplicationController
   def index
       # i set @docs let it be the complete list of doctors in the main page
     @docs = Doc.all
+    @docs = @articles.favorited_by(params[:favorited]) if params[:favorited].present?
+
     if params[:search]
        @docs = Doc.search(params[:search])
      else

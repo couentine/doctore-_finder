@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <center><h1>Doctors in your Area</h1></center>
-
+<center><h4>Search by Name or Specialty</h4></center>
 <br>
 <center>
   <!-- Search bar is working on local but not on heroku -->
 
 <%= form_tag(docs_path, :method => "get", id: "search-form") do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search Doctors or Speciality" %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Doctors" %>
     <%= submit_tag "Search", :name => nil %>
     <% if @docs.blank? %>
   <h4>There are no doctors containing the term <%= params[:search] %>.</h4>

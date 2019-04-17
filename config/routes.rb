@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :docs
+  resources :docs do
+ resource :favorite, only: [:create, :destroy]
+end
   get 'welcome/index'
 
 root 'docs#index'
