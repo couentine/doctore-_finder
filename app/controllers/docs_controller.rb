@@ -31,17 +31,6 @@ class DocsController < ApplicationController
   end
 
   def create
-    @doc = Doc.new(doc_params)
-
-    respond_to do |format|
-      if @doc.save
-        format.html { redirect_to @doc, notice: 'Doc was successfully created.' }
-        format.json { render :show, status: :created, location: @doc }
-      else
-        format.html { render :new }
-        format.json { render json: @doc.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
 
