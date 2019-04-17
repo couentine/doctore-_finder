@@ -41,4 +41,4 @@ secrets.yml
 /db/*.sqlite3
 /log/*.log
 /tmp
-/public/uploads
+/public/uploadssecrets.yml
