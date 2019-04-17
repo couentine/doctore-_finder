@@ -7,7 +7,7 @@ FactoryBot.define do
         email "aabb@hh.de"
         password "ruby"
         password_confrimation "ruby"
-         technique   FactoryBot.create :technique
+        
       end
 
 
