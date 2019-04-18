@@ -36,7 +36,6 @@
 /temp
 
 # Ignore secrets
-secrets.yml
 
 /db/*.sqlite3
 /log/*.log
