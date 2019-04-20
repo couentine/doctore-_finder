@@ -6,9 +6,8 @@ This is an open source Doctors finder.
 
 You can register any doctors from the Bay area then search them by name and Zip code. 
 
-The next
 
-The final goal will be to connect this application to an API
+The final goal will be to connect this application to an API for have full updated list of doctors
 
 <h4>Installation and configuration </h4>
 
@@ -25,7 +24,7 @@ The tests are done with Rspec. To be sure everything is working fine you can run
 
 For Admin through console
 
-Create a doctor: 
+<h5>Create a doctor: </h5>
 Rails c
 
  => New = Doc::Create.new(
@@ -39,13 +38,15 @@ Rails c
 
 --------------
 
-Find a user:
+<h5>Find a user:</h5>
 
 User.find('email') or User.find(id)
 
+<h4>Contribution</h4>
 
-A link to collaboration guidelines, or a set of rules for contribution
-Terms of use
-Code of conduct
-Test and package widgets
-Example usage of the APIs in the project
+Any contribution are welcome. They will be validate before any merge to master.
+
+You need to post an issue with your idea before starting anything then wait the validation of it (I will try to go back to you ASAP)
+
+Your idea need to explain what you want to do why it will be a good update for the app.
+
